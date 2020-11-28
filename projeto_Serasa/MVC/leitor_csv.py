@@ -20,7 +20,7 @@ def ler_arquivo():
         #for item in leitor:
          #   print(item)
 
-#ler_arquivo()
+ler_arquivo()
 
 pessoa = {
     'nome':'rebecca',

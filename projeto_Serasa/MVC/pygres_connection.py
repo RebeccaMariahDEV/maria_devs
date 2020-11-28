@@ -1,12 +1,11 @@
 import psycopg2
+from psycopg2.extras import RealDictCursor
 
-conn = psycopg2.connect(host="localhost", user="USERNAME", passwd="PASSWORD", dbname="maria_devs")
 
-cursor = conn.cursor()
+conn = psycopg2.connect("dbname=curso_mvcad user=c80967a password=postgres "
+                        "host=localhost")
 
-cursor.execute()
+conn.autocommit = True
 
-conn.comit()
-cursor.close()
-conn.close()
+cursor = conn.cursor(cursor_factory=RealDictCursor)
 

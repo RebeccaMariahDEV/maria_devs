@@ -19,11 +19,10 @@ def retorna_pessoa():
 
     return pygres_connection.cursor.execute("SELECT * FROM pessoas")
 
-  """  pygres_connection.db.insert("pessoa", nome=dados_pessoa['pessoa'],
+    pygres_connection.db.insert("pessoa", nome=dados_pessoa['pessoa'],
                                 endereco=dados_pessoa['endereço'],
                                 cpf=dados_pessoa['cpf'],
                                 estado=dados_pessoa['estado'],
                                 turma=dados_pessoa['turma'],
                                 periodo=dados_pessoa['periodo'],
                                 modulo=dados_pessoa['modulo'])
-"""
